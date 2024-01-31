@@ -26,9 +26,7 @@ const Navbar = () => {
         <Menu.Item icon={<FundOutlined/>}>
             <Link to="/exchanges" >Exchanges</Link>
         </Menu.Item>
-        <Menu.Item icon={<MenuOutlined/>}>
-            <Link to="/menu" >Menu</Link>
-        </Menu.Item>
+       
 
 
       </Menu>
