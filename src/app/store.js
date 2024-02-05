@@ -1,11 +1,15 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { cryptoApi } from "../services/cryptoApi";
+import { cryptoNewsApi } from "../services/cryptoNews.Api";
 
 export default configureStore({
   reducer: {
     [cryptoApi.reducerPath]: cryptoApi.reducer,
+    [cryptoNewsApi.reducerPath]: cryptoNewsApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(cryptoApi.middleware), // Add the RTK-Query middleware
+    getDefaultMiddleware().concat(
+      cryptoApi.middleware,
+      cryptoNewsApi.middleware
+    ), // Combine the middleware arrays
 });
-
