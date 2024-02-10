@@ -1,6 +1,7 @@
 # React + Vite
 
 Certainly! Here's a template for a README file to explain a React cryptocurrency app using React Toolkit and Ant Design on GitHub:
+![cyrtopic](https://github.com/Sakyi2/cryptoverse/assets/122180455/45e501f1-b031-45bf-9e6c-78c25da6867c)
 
 ---
 
